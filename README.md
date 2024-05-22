@@ -84,10 +84,33 @@ Run out 	          +6
   - Players [] (required, list of player names)
   - Captain (required, player name) 
   - vice-captain (required, player name)
+## Example Request Body
+```
+{
+  "teamName": "MyTeam2",
+  "players": [
+    "RD Gaikwad",
+    "N Jagadeesan",
+    "MS Dhoni",
+    "Ravindra Jadeja",
+    "Deepak Chahar",
+    "C.Hari Nishaanth",
+    "JC Buttler",
+    "SV Samson",
+    "R Parag",
+    "TA Boult",
+    "YS Chahal"
+  ],
+  "captain": "MS Dhoni",
+  "viceCaptain": "Ravindra Jadeja"
+}
+
+```
+
 
 
 ### Process Match Result "/process-result"
-  - Run this endpoint to process match result
+  - Run this endpoint to process the match result
   - This should calculate points for the players and assign it to the team entries with those players
   - Input Parameters:
     - None, the resuls will be processed using data/match.json for CSKvRR 2022
@@ -99,3 +122,6 @@ Run out 	          +6
   - If multiple teams have the top score, show all the winning teams
   - Input Parameters:
     - None, show results for CSKvRR 2022
+###Deployment
+The deployed API can be accessed at
+[https://fantasyapp-d870.onrender.com/]
