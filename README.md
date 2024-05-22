@@ -78,6 +78,8 @@ Run out 	          +6
 ### Add Team Entry "/add-team"
 - App users can use this endpoint to submit new team entries
 - Validate for player selection rules as above
+- Type: POST
+- Example: https://fantasyapp-d870.onrender.com/api/add-team
 - Input Parameters:
   - Your Team Name (required)
   - Players [] (required, list of player names)
@@ -111,16 +113,23 @@ Run out 	          +6
 ### Process Match Result "/process-result"
   - Run this endpoint to process the match result
   - This should calculate points for the players and assign it to the team entries with those players
+  - Type: POST
+  - Example: https://fantasyapp-d870.onrender.com/api/process-result
   - Input Parameters:
     - None, the resuls will be processed using data/match.json for CSKvRR 2022
+    
 
 
 ### View Teams Results "/team-result"
   - To view the list of team entries with thier scored points and the team's total points
   - The top team with maximum points should be shown as winner
   - If multiple teams have the top score, show all the winning teams
-  - Input Parameters:
-    - None, show results for CSKvRR 2022
+  - Input Parameters: None
+  - type: GET
+  - Example: https://fantasyapp-d870.onrender.com/api/team-result
+  
+    
+  show results for CSKvRR 2022
 ### Deployment
 The deployed API can be accessed at
 https://fantasyapp-d870.onrender.com/
