@@ -6,8 +6,7 @@ Write a simple backend to accept team entries for a fantasy cricket app (similar
 ## Tech Stack 
 - Node.js with Express
 - Database 
-  - MongoDB 
-  - DB Name: "task-"
+  - MongoDB(Cloud)
 
 
 ## Data
@@ -36,7 +35,7 @@ Min & Max Players in a team
 Player 				    Type	Min	Max
 Wicket Keeper 	 	WK		1	  8
 Batter	 			    BAT		1	  8
-All Rounder			  AR		1	  8
+All-Rounder			  AR		1	  8
 Bowler				    BWL		1	  8
 
 Once you have selected your 11 players, you will have to assign a captain and vice-captain for your team
@@ -122,6 +121,6 @@ Run out 	          +6
   - If multiple teams have the top score, show all the winning teams
   - Input Parameters:
     - None, show results for CSKvRR 2022
-###Deployment
+### Deployment
 The deployed API can be accessed at
-[https://fantasyapp-d870.onrender.com/]
+https://fantasyapp-d870.onrender.com/
